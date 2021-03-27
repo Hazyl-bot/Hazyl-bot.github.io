@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -21,19 +21,19 @@
     var CONFIG = {"hostname":"zyg922.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="数据库简介​    mongoDB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。">
+  <meta name="description" content="mongo DB简介​    mongo DB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mongoDB简介">
+<meta property="og:title" content="mongo DB简介">
 <meta property="og:url" content="http://zyg922.github.io/2021/02/03/mongoDB%E7%AE%80%E4%BB%8B/index.html">
 <meta property="og:site_name" content="Squid&#39;s Blog">
-<meta property="og:description" content="数据库简介​    mongoDB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。">
+<meta property="og:description" content="mongo DB简介​    mongo DB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-03T01:57:07.000Z">
-<meta property="article:modified_time" content="2021-02-03T08:29:24.893Z">
+<meta property="article:modified_time" content="2021-02-03T01:57:07.000Z">
 <meta property="article:author" content="5quidWard">
-<meta property="article:tag" content="mongoDB">
 <meta property="article:tag" content="数据库">
-<meta property="article:tag" content="noSQL">
+<meta property="article:tag" content="mongo DB">
+<meta property="article:tag" content="NoSQL">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://zyg922.github.io/2021/02/03/mongoDB%E7%AE%80%E4%BB%8B/">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>mongoDB简介 | Squid's Blog</title>
+  <title>mongo DB简介 | Squid's Blog</title>
   
 
 
@@ -182,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          mongoDB简介
+          mongo DB简介
         </h1>
 
         <div class="post-meta">
@@ -191,9 +191,8 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-02-03 09:57:07 / 修改时间：16:29:24" itemprop="dateCreated datePublished" datetime="2021-02-03T09:57:07+08:00">2021-02-03</time>
+              <time title="创建时间：2021-02-03 09:57:07" itemprop="dateCreated datePublished" datetime="2021-02-03T09:57:07+08:00">2021-02-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -211,14 +210,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>937</span>
+              <span>4.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -230,13 +229,193 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="数据库简介"><a href="#数据库简介" class="headerlink" title="数据库简介"></a>数据库简介</h1><p>​    mongoDB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。</p>
-<a id="more"></a>
+        <h1 id="mongo-DB简介"><a href="#mongo-DB简介" class="headerlink" title="mongo DB简介"></a>mongo DB简介</h1><p>​    mongo DB是现在最常用的非关系型数据库之一，它采用文档存储的方式，支持一次性存进组装好的JSON格式数据，在海量查询的情况下速度很快。是大数据方向比较好用的数据库之一。</p>
+<span id="more"></span>
 
 <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">use testdb</span><br><span class="line">db.createCollection(&quot;student&quot;)</span><br><span class="line">db.student.insert(&#123;name:&#x27;小明&#x27;,age:12&#125;)</span><br><span class="line">db.student.save(&#123;name:&#x27;小帅&#x27;,age:15&#125;)</span><br><span class="line">db.student.save([</span><br><span class="line">	&#123;</span><br><span class="line">		name:<span class="string">&#x27;小红&#x27;</span>,</span><br><span class="line">		age:<span class="number">11</span></span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		name:<span class="string">&#x27;张三&#x27;</span>,</span><br><span class="line">		age:<span class="number">12</span></span><br><span class="line">	&#125;</span><br><span class="line">])</span><br><span class="line">db.student.find(); <span class="operator">/</span><span class="operator">/</span>全表查询</span><br><span class="line">db.student.update(</span><br><span class="line">	&#123;</span><br><span class="line">		name:<span class="string">&#x27;张三&#x27;</span></span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		$set:&#123;</span><br><span class="line">			age:<span class="number">13</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">);</span><br><span class="line">db.student.find();</span><br><span class="line">db.student.remove(&#123;</span><br><span class="line">	name:<span class="string">&#x27;张三&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line">db.student.find();</span><br></pre></td></tr></table></figure>
+
 <p>这样就演示了一轮数据库的基本增删改查，其中save这个函数的作用是覆盖式插入。如果插入时指定了主键，而数据库中已有相同主键的话，那么后来的数据就会把前面的覆盖。</p>
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>​    在数据量比较大的时候，全表扫描耗时很长，这时我们就需要创建索引</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">db</span><span class="selector-class">.student</span><span class="selector-class">.createIndex</span>(&#123; <span class="attribute">age</span>: <span class="number">1</span> &#125;)</span><br><span class="line">//1代表按年龄升序排序，<span class="selector-tag">-1</span>代表降序。</span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.student</span><span class="selector-class">.find</span>(&#123;<span class="attribute">age</span>:<span class="number">12</span>&#125;);</span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.getIndexes</span>() // 输出<span class="selector-tag">age_1</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.dropIndex</span>(&quot;<span class="selector-tag">age_1</span>&quot;)</span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.student</span><span class="selector-class">.createIndex</span>( &#123;<span class="attribute">name</span>: <span class="number">1</span>, age: <span class="number">1</span>&#125; ) //索引还可以按照多个条件创建</span><br></pre></td></tr></table></figure>
+<h2 id="内嵌文档查询"><a href="#内嵌文档查询" class="headerlink" title="内嵌文档查询"></a>内嵌文档查询</h2><p>这个操作属于mongoDB的特性，因为在mongoDB 的实际使用中经常把对象以JSON的格式作为字段存储。而当我们想要查询某文档的对象属性中的某个字段时（这里可能有点绕）就需要使用内嵌文档查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">db.ykd_order.save([</span><br><span class="line">  &#123;</span><br><span class="line">    _id: <span class="string">&#x27;YKD_0001&#x27;</span>,</span><br><span class="line">    payAmount: <span class="number">299</span>,</span><br><span class="line">    payNickName: <span class="string">&#x27;致远之道&#x27;</span>,</span><br><span class="line">    product: &#123;</span><br><span class="line">      productName: <span class="string">&#x27;海澜之家夏季最新款寸衫&#x27;</span>,</span><br><span class="line">      currentPrice: <span class="number">198.0</span>,</span><br><span class="line">      productTag: [<span class="string">&#x27;NEW&#x27;</span>, <span class="string">&#x27;WOMEN&#x27;</span>],</span><br><span class="line">      productType: <span class="string">&#x27;CLOTHING&#x27;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    gmtCreated: <span class="keyword">new</span> <span class="type">Date</span>(),</span><br><span class="line">    gmtModified: <span class="keyword">new</span> <span class="type">Date</span>(),</span><br><span class="line">  &#125;;</span><br><span class="line">db.ykd_order.find(&#123;</span><br><span class="line">  <span class="string">&#x27;product.productName&#x27;</span>: <span class="string">&#x27;海澜之家夏季最新款寸衫&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;product.productType&#x27;</span>: <span class="string">&#x27;CLOTHING&#x27;</span>,</span><br><span class="line">&#125;);</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<p>这样即可根据商品查询到所有的对应订单信息（实战：统计销量）</p>
+<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><p>​    上面的update语法中出现了一个$号，这就是mongo DB中的操作符。操作符可以帮助我们进行赋值，限制等一系列的操作。</p>
+<h3 id="比较操作符"><a href="#比较操作符" class="headerlink" title="比较操作符"></a>比较操作符</h3><p>mongo DB支持按照某个字段值的大小查询，例如查询所有价格大于66或所有库存小于99的商品。这时候需要使用比较操作符。</p>
+<table>
+<thead>
+<tr>
+<th>比较操作符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$eq/$ne</td>
+<td>相等/不相等</td>
+</tr>
+<tr>
+<td>$in/$nin</td>
+<td>在其中/不在其中（接入数组）</td>
+</tr>
+<tr>
+<td>$lt/$lte</td>
+<td>小于/小于等于</td>
+</tr>
+<tr>
+<td>$gt/$gte</td>
+<td>大于/大于等于</td>
+</tr>
+</tbody></table>
+<p>用法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;查询价格大于等于1000的鞋子</span><br><span class="line">db.ykd_product.find(&#123;</span><br><span class="line">  productType: &#39;SHOE&#39;,</span><br><span class="line">  crossedPrice: &#123; $gte: 1000 &#125;,</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F;查询价格是1299&#x2F;1599&#x2F;1199的商品</span><br><span class="line">db.ykd_product.find(&#123;</span><br><span class="line">  crossedPrice: &#123; $in: [1299, 1599, 1199] &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="逻辑操作符"><a href="#逻辑操作符" class="headerlink" title="逻辑操作符"></a>逻辑操作符</h3><p>mongo DB 支持多条件组合查询，只需要在条件之间加上逻辑操作符</p>
+<table>
+<thead>
+<tr>
+<th>逻辑操作符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$and</td>
+<td>表示查询的文档必须符合连接的所有条件</td>
+</tr>
+<tr>
+<td>$nor</td>
+<td>表示查询的文档必须不符合连接的所有条件</td>
+</tr>
+<tr>
+<td>$or</td>
+<td>表示查询的文档只要符合连接的一个条件即可</td>
+</tr>
+<tr>
+<td>$not</td>
+<td>只可以用于单个条件，表示查询的文档必须不符合这个条件</td>
+</tr>
+</tbody></table>
+<p>用法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.product.find(&#123;</span><br><span class="line">   $nor:[</span><br><span class="line">       &#123;</span><br><span class="line">       	price:&#123; $lte:900&#125;</span><br><span class="line">       &#125;,</span><br><span class="line">       type:&#123; $in:&#123;&#x27;SHOE&#x27;,&#x27;CLOTH&#x27;&#125;&#125;</span><br><span class="line">   ]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>查找价格大于<span class="number">900</span>且并不是鞋子和衣服的商品</span><br></pre></td></tr></table></figure>
+
+<h3 id="正则表达式-regex"><a href="#正则表达式-regex" class="headerlink" title="正则表达式 regex"></a>正则表达式 regex</h3><p>​    和比较操作符的用法一样，在字段后加上 $regex：正则内容，即可按照正则查询文档</p>
+<p>eg:<code>db.product.find(&#123;name: &#123;$regex:&#39;%运动%&#39;&#125;&#125;);</code> 即可查找所有带有运动二字的商品</p>
+<h2 id="重要方法"><a href="#重要方法" class="headerlink" title="重要方法"></a>重要方法</h2><p>mongo DB 里的关键字基本上都使用方法来体现，以下介绍几个重要的方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>limit</td>
+<td>int n</td>
+<td>在find()后使用，查找符合条件的前n条数据</td>
+</tr>
+<tr>
+<td>count</td>
+<td>无</td>
+<td>在find()后/代替find()使用，输出符合条件数据的总条数</td>
+</tr>
+<tr>
+<td>distinct</td>
+<td>字段名，查询条件</td>
+<td>直接使用，去重查询。查询到的文档在第一个参数的字段名中不会包含同样的值</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>‘字段名’:1/-1</td>
+<td>写在find后，把查到的数据以字段名参数为排序依据，进行升/降序排列</td>
+</tr>
+<tr>
+<td>explain</td>
+<td>‘executionStats’</td>
+<td>写在整个语句的最后，它会返回查询的性能信息</td>
+</tr>
+<tr>
+<td>serverStatus().mem</td>
+<td>无</td>
+<td>在db.后使用，查看磁盘空间内存占用情况</td>
+</tr>
+<tr>
+<td>runCommand()</td>
+<td>{closeAllDatabases:1}</td>
+<td>在db.后使用，释放内存空间，一般在大幅度删改数据库后使用</td>
+</tr>
+</tbody></table>
+<p>explain的性能信息解释示例：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;queryPlanner&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;namespace&quot;</span>: <span class="string">&quot;draftdb.ykd_bank_accounts&quot;</span>,<span class="comment">//代表的是该查询所扫描的表</span></span><br><span class="line">        <span class="attr">&quot;indexFilterSet&quot;</span>: <span class="literal">false</span>,<span class="comment">//表示MongoDB在查询中是否使用索引过滤</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">&quot;executionStats&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;executionSuccess&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">&quot;nReturned&quot;</span>: <span class="number">6330</span>,<span class="comment">//返回当前查询的文档数量</span></span><br><span class="line">        <span class="attr">&quot;executionTimeMillis&quot;</span>: <span class="number">39</span>,<span class="comment">//整体执行的时间</span></span><br><span class="line">        <span class="attr">&quot;totalKeysExamined&quot;</span>: <span class="number">6330</span>,<span class="comment">//索引扫描的次数</span></span><br><span class="line">        <span class="attr">&quot;totalDocsExamined&quot;</span>: <span class="number">6330</span>,<span class="comment">//document扫描次数</span></span><br><span class="line">        <span class="attr">&quot;executionStages&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;stage&quot;</span>: <span class="string">&quot;FETCH&quot;</span>,</span><br><span class="line">            ------------------</span><br><span class="line">            &quot;nReturned&quot;: 6330,//返回当前查询的文档数量</span><br><span class="line">             &quot;indexName&quot;: &quot;age_1&quot;,//使用的索引的名字,</span><br><span class="line">              &quot;inputStage&quot;: &#123;</span><br><span class="line">                &quot;stage&quot;: &quot;IXSCAN&quot;,//stage的子 stage，此处是IXSCAN，表示进行的是索引扫描</span><br><span class="line">                -------------------</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;ok&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>stage解释：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>COLLSCAN</td>
+<td>全表扫描</td>
+</tr>
+<tr>
+<td>IXSCAN*</td>
+<td>索引扫描</td>
+</tr>
+<tr>
+<td>FETCH*</td>
+<td>根据索引去检索指定document</td>
+</tr>
+<tr>
+<td>SHARE_MERGE</td>
+<td>将各个分片返回数据进行merge</td>
+</tr>
+<tr>
+<td>SORT</td>
+<td>在内存中进行排序</td>
+</tr>
+<tr>
+<td>LIMIT</td>
+<td>使用limit限制返回数</td>
+</tr>
+<tr>
+<td>SKIP</td>
+<td>使用SKIP进行跳过</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>全文索引查询</td>
+</tr>
+<tr>
+<td>PROJECTION</td>
+<td>限定返回字段</td>
+</tr>
+<tr>
+<td>IDHACK</td>
+<td>针对_id进行查询</td>
+</tr>
+</tbody></table>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>​    在数据量比较大的时候，全表扫描耗时很长，这时我们就需要创建索引来加快查询速度。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">db.student.createIndex(&#123; age: <span class="number">1</span> &#125;)</span><br><span class="line"><span class="regexp">//</span><span class="number">1</span>代表按年龄升序排序，-<span class="number">1</span>代表降序。</span><br><span class="line">db.student.find(&#123;age:<span class="number">12</span>&#125;);</span><br><span class="line">db.getIndexes() <span class="regexp">//</span> 输出age_1</span><br><span class="line">db.dropIndex(<span class="string">&quot;age_1&quot;</span>)</span><br><span class="line">db.student.createIndex( &#123;name: <span class="number">1</span>, age: <span class="number">1</span>&#125; ) <span class="regexp">//</span>创建复合索引 这里的顺序还代表了匹配优先级</span><br><span class="line">db.blog.createIndex(&#123;<span class="string">&#x27;content&#x27;</span>:<span class="string">&#x27;text&#x27;</span>,<span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;text&#x27;</span>&#125;)<span class="regexp">//</span>创建content和name字段的全文本索引</span><br><span class="line">db.blog.find(&#123;<span class="variable">$text</span>:&#123;<span class="variable">$search</span>:<span class="string">&#x27;祖国&#x27;</span>&#125;&#125;)<span class="regexp">//</span>搜索全部name和content中带有祖国的文档。</span><br></pre></td></tr></table></figure>
+
+<p>​    索引分为单字段索引，复合索引和全文本索引三种，不同的创建方法会给其带来不同的特点：</p>
+<ul>
+<li>单字段索引：最基础的一种，建立索引后数据库会按照这个字段的升序或降序给文档记录一个位置信息，这样就可以根据位置查找，不需要全表扫描</li>
+<li>复合索引：相当于单字段索引的二维叠加。支持多个查询条件作为索引查询，也支持匹配第一个字段的 单字段查询，还支持匹配符合索引前缀的查询。</li>
+<li>全文本索引：一个文档只能创建一个，查找时不区分大小写，可以设置每个字段的查找权重，会使mongoDb的写入速度变慢</li>
+</ul>
+<p>权重设置方法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.ykd_blog.createIndex(</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;content&quot;: &quot;text&quot;, &quot;name&quot;: &quot;text&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;weights&quot;: &#123; &quot;content&quot;: 1, &quot;name&quot;: 2 &#125;</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>这里表示优先搜索name字段中带有目标文本的文档。</span><br></pre></td></tr></table></figure>
+
+<h3 id="索引的使用场合"><a href="#索引的使用场合" class="headerlink" title="索引的使用场合"></a>索引的使用场合</h3><p>​    恰当地使用索引可以大大提升查询效率，但它的创建和维护本身也会花费时间和物理空间，并且如果表内数据有更新，索引也要跟着更新。</p>
+<p>以下总结一些索引的使用时机：</p>
+<ol>
+<li>在经常需要搜索或作为条件的列上，可以加快搜索速度</li>
+<li>在作为主键的列上，可以强制该列的唯一性</li>
+<li>在经常用于连接的列上（外键），可以加快连接速度</li>
+<li>在经常需要排序的列上，因为索引本身就是一个排序行为，可以加快排序查询的速度</li>
+</ol>
+<p>测试索引时可以多使用explain方法查看它是否起了作用，对学习和应用都很有帮助。</p>
 
     </div>
 
@@ -246,9 +425,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/mongoDB/" rel="tag"># mongoDB</a>
               <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
-              <a href="/tags/noSQL/" rel="tag"># noSQL</a>
+              <a href="/tags/mongo-DB/" rel="tag"># mongo DB</a>
+              <a href="/tags/NoSQL/" rel="tag"># NoSQL</a>
           </div>
 
         
@@ -322,7 +501,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">数据库简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95"><span class="nav-number">1.2.</span> <span class="nav-text">索引</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#mongo-DB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">mongo DB简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%B5%8C%E6%96%87%E6%A1%A3%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.2.</span> <span class="nav-text">内嵌文档查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="nav-number">1.3.</span> <span class="nav-text">操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="nav-number">1.3.1.</span> <span class="nav-text">比较操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="nav-number">1.3.2.</span> <span class="nav-text">逻辑操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-regex"><span class="nav-number">1.3.3.</span> <span class="nav-text">正则表达式 regex</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E8%A6%81%E6%96%B9%E6%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text">重要方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95"><span class="nav-number">1.5.</span> <span class="nav-text">索引</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E5%90%88"><span class="nav-number">1.5.1.</span> <span class="nav-text">索引的使用场合</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -349,7 +528,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -398,13 +577,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">38k</span>
+    <span title="站点总字数">44k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">35 分钟</span>
+    <span title="站点阅读时长">40 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
